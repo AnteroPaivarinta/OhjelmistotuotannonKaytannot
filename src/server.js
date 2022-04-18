@@ -4,7 +4,7 @@
 let Employee = require('./components/Attendance');
 
 // And in the file you want to use these functions,
-let obj = new Employee("Isaac Tonyloi", "jea");
+let obj = new Employee("Isaac Tonyloi", "1");
 console.log("testi1",obj.getDate());
 
 var mysql = require('mysql');
@@ -94,7 +94,6 @@ var con4 = mysql.createConnection({
        con.query("SELECT * FROM lasnaolo", function (err, result, fields) {
           // if any error while executing above query, throw error
           if (err) throw err;
-          console.log("Haloo");
           // if there is no error, you have the result
              arrayResult.push(result);
              console.log(result);
